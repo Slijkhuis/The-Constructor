@@ -413,55 +413,6 @@ def SQLu(query):
 	cursor = db.cursor()
 	cursor.execute(query)
 	db.commit()
-		
-#query = "DELETE FROM brick WHERE part_name = 'BBa_E0022';"
-#SQL(query)
-#query = "UPDATE brick set part_results = 'NoneX' where part_results is NULL;" 
-#print query
-#SQL(query)
-#query = "UPDATE brick SET part_results = 'None' WHERE part_name = 'BBa_R0073';"
-#print query
-#SQLu(query)
-#print '[DEBUGGING]'
-#query = "Select COUNT(part_name) from brick WHERE rfc REGEXP 'RFC10\\\+|RFC23\\\+|RFC25\\\+';"
-#print SQL(query)
-#query = "Select COUNT(part_name) from brick;"
-#print SQL(query)
-#query = """UPDATE brick set part_results = "None" WHERE part_results = 'None'"""
-#SQLu(query)
-#query = 'SELECT * FROM brick where part_name = \'BBa_E0022\' and part_results = "None";'
-#print SQL(query)
-#query = "SELECT part_name, part_results FROM brick where part_name = 'BBa_E0022';"
-#print SQL(query)
-#query = "SELECT part_name, part_results FROM brick where part_name = 'BBa_R0073';"
-#print SQL(query)
-#query = "SELECT COUNT(part_name) FROM brick"
-#print SQL(query)
-# query = "SELECT part_name, part_results, best_quality, part_status FROM brick where part_name = 'BBa_K176028';"
-# print SQL(query)
-# query = "SELECT part_name, part_results, best_quality, part_status FROM brick where part_name = 'BBa_I0460';"
-# print SQL(query)
-# query = "SELECT part_name, part_results, best_quality, part_status FROM brick where part_name = 'BBa_K182102';"
-# print SQL(query)
-# query = "SELECT part_name, part_results, best_quality, part_status FROM brick where part_name = 'BBa_C0061';"
-# print SQL(query)
-# query = "SELECT part_name, part_results, best_quality, part_status FROM brick where part_name = 'BBa_I13033';"
-# print SQL(query)
-#query = "SELECT part_id, part_name, part_results, best_quality, part_status FROM brick where part_name = 'BBa_K283026';"
-#print SQL(query)
-#query = "SELECT part_id, part_name, part_results, best_quality, part_status FROM brick where part_name = 'BBa_X';"
-#print SQL(query)
-#query = "SELECT * FROM superpart WHERE brick_part_id = 0;"
-#print SQL(query)
-#query = "INSERT INTO brick VALUES (0,'BBa_X','X','New part (does not exist in database yet)','Other','Available','Works','X',NULL,'http://2012.igem.org/Team:Wageningen_UR','2012-05-25','Wageningen UR 2012','Confirmed','thisdoesntexist',NULL)"
-#print SQLu(query)
-#query = "INSERT INTO superpart VALUES (0,0,0)"
-#print SQLu(query)
-
-#query = "SELECT part_name,rfc FROM brick WHERE part_name = 'BBa_P0353' AND rfc = 'RFC10+,RFC12+,RFC21+,RFC23+,RFC25+';"
-#print SQL(query)
-#query = "SELECT part_name,rfc FROM brick WHERE part_name = 'BBa_P0353' AND rfc LIKE '%RFC10+%';"
-#print SQL(query)
 
 main()
 
